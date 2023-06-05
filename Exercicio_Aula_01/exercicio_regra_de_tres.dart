@@ -30,6 +30,6 @@ main() {
 }
 
 void regraTres({required var v1, required var v2, required var v3}) {
-  var resolucao = v2 / (v2 * v3);
+  var resolucao = v1 / (v2 * v3);
   print(resolucao);
 }
