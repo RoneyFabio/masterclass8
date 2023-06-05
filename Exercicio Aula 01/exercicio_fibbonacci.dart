@@ -13,17 +13,20 @@ Implemente a sequencia fibonacci com funcões recursivamente usando o Dart.
 
 */
 
-void main(List<String> args) {
-  int numero = 10;
-  int resultado = soma(valor: numero);
-
-  print('A soma dos inteiros de 1 a $numero é: $resultado');
+void main(List<String> arguments) {
+  int valor = 10;
+  print("Os 10 primeiros elementos da sequencia fibonacci são:");
+  for (int c = 0; c <= valor; c++) {
+    print(fibonacci(c));
+  }
 }
 
-soma({required int valor}) {
-  if (valor == 1) {
+int fibonacci(int i) {
+  if (i == 0) {
+    return 0;
+  } else if (i == 1) {
     return 1;
   } else {
-    return valor + soma(valor: (valor - 1));
+    return fibonacci(i - 1) + fibonacci(i - 2);
   }
 }
