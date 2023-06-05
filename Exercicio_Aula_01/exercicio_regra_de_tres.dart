@@ -26,13 +26,10 @@ main() {
   print('Informe o terceiro elemento: ');
   var valorTres = stdin.readLineSync();
 
-  print('Informe o quarto elemento: ');
-  var valorQuatro = stdin.readLineSync();
-  regraTres(v1: valorUm, v2: valorDois, v3: valorTres, v4: valorQuatro);
+  regraTres(v1: valorUm, v2: valorDois, v3: valorTres);
 }
 
-void regraTres(
-    {required var v1, required var v2, required var v3, required var v4}) {
-  var resolucao = (v1 / v2) / (v3 * v4);
+void regraTres({required var v1, required var v2, required var v3}) {
+  var resolucao = v2 / (v2 * v3);
   print(resolucao);
 }
