@@ -31,3 +31,4 @@ da direita para a esquerda por números crescentes a partir do número 2.
 O Resultado deve ser igual ao segundo dígito verificador.
 
  */
+void main(List<String> args) {}
